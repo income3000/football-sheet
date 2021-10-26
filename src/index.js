@@ -6,12 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import Form from './components/Form';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Table from './components/Table';
+import Home from './components/Home'
 // import {Homepage, Aboutpage } from './App';
 ReactDOM.render(
   <Router>
     <Switch>
       <Route path='/' exact component={App} />
       <Route path='/Form' exact component={Form} />
+      <Route path='/Home' exact component={Home} />
       <Route path='/Table' exact component={Table} />
     </Switch>
     <App />
